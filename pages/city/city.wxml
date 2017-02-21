@@ -1,0 +1,179 @@
+<!--pages/city/city.wxml-->
+<view class="container bc_gray">
+    <view class="pub_title">
+        <icon class="back" bindtap="goBack"></icon>
+        城市定位
+    </view>
+    <view class="hotCity mb30">
+        <text>热门城市</text>
+        <view class="clearfix Citys">
+            <navigator url="{{page}}?code=110000">北京市</navigator>
+            <navigator url="{{page}}?code=310000">上海市</navigator>
+            <navigator url="{{page}}?code=440100">广州市</navigator>
+            <navigator url="{{page}}?code=440300">深圳市</navigator>
+            <navigator url="{{page}}?code=500000">重庆市</navigator>
+            <navigator url="{{page}}?code=510100">成都市</navigator>
+            <navigator url="{{page}}?code=120000">天津市</navigator>
+            <navigator url="{{page}}?code=330100">杭州市</navigator>
+            <navigator url="{{page}}?code=210200">大连市</navigator>
+        </view>
+    </view>
+    <view class="otherCity">
+        <view class="cityItem mb30" wx:if="{{ACity}}">
+            <text>{{ACity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{AList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{BCity}}">
+            <text>{{BCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{BList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{CCity}}">
+            <text>{{CCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{CList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{DCity}}">
+            <text>{{DCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{DList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{ECity}}">
+            <text>{{ECity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{EList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{FCity}}">
+            <text>{{FCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{FList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{GCity}}">
+            <text>{{GCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{GList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{HCity}}">
+            <text>{{HCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{HList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{ICity}}">
+            <text>{{ICity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{IList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{JCity}}">
+            <text>{{JCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{JList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{KCity}}">
+            <text>{{KCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{KList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{LCity}}">
+            <text>{{LCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{LList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{MCity}}">
+            <text>{{MCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{MList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{NCity}}">
+            <text>{{NCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{NList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{OCity}}">
+            <text>{{OCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{OList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{PCity}}">
+            <text>{{PCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{PList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{QCity}}">
+            <text>{{QCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{QList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{RCity}}">
+            <text>{{RCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{RList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{SCity}}">
+            <text>{{SCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{SList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{TCity}}">
+            <text>{{TCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{TList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{UCity}}">
+            <text>{{UCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{UList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{VCity}}">
+            <text>{{VCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{VList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{WCity}}">
+            <text>{{WCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{WList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{XCity}}">
+            <text>{{XCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{XList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{YCity}}">
+            <text>{{YCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{YList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+        <view class="cityItem mb30" wx:if="{{ZCity}}">
+            <text>{{ZCity}}</text>
+            <view class="cityList">
+                <view data-code="{{item.code}}" wx:for="{{ZList}}" bindtap="skipPage">{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+</view>

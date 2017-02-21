@@ -1,0 +1,53 @@
+<!--repair.wxml-->
+<view class="container">
+  <view class="pub_title">
+    <icon class="back" bindtap="goBack"></icon>
+    维修预约
+    <icon type="search"  color="#fff"></icon>
+    <navigator url="../search/search" class="skip"></navigator>
+  </view>
+  <view class="filter">
+    <view class="btn clearfix">
+      <view class="{{choosed?'on':''}}" bindtap="compStyleFn">{{btnTitle}}</view>
+      <view class="{{choosed2?'on':''}}" bindtap="inteSortFn">{{btnTitle2}}</view>
+    </view>
+    <view class="condition" hidden="{{compStyle}}">
+      <view data-id="" class="{{id =='' ? 'on':''}}" bindtap="chooseFn">全部</view>
+      <view data-id="1" class="{{id == 1 ?'on':''}}"  bindtap="chooseFn">4S店</view>
+      <view data-id="2" class="{{id == 2 ?'on':''}}"  bindtap="chooseFn">综合维修</view>
+      <view data-id="3" class="{{id == 3 ? 'on':''}}"  bindtap="chooseFn">美容装饰</view>
+    </view>
+    <view class="condition" hidden="{{inteSort}}">
+      <view data-id="" class="{{sort =='' ? 'on':''}}" bindtap="choose2Fn">全部</view>
+      <view data-id="commScore" class="{{sort =='commScore' ? 'on':''}}" bindtap="choose2Fn">评分最高</view>
+      <view data-id="distance" class="{{sort =='distance' ? 'on':''}}" bindtap="choose2Fn">离我最近</view>
+      <view data-id="commCount" class="{{sort =='commCount' ? 'on':''}}" bindtap="choose2Fn">评价最多</view>
+      <view data-id="authentication" class="{{sort =='authentication' ? 'on':''}}" bindtap="choose2Fn">认证商家优先</view>
+      <view data-id="online_order" class="{{sort =='online_order' ? 'on':''}}" bindtap="choose2Fn">支持在线预约优先</view>
+    </view>
+  </view>
+  <scroll-view scroll-y="true" style="height: 1094rpx;" bindscrolltolower="onReachBottom">
+    <view class="mod_view clearfix" wx:for="{{compList}}">
+      <view class="imgbox fl">
+        <image src="{{item.comp_photo}}" mode="aspectFill"></image>
+        <view class="mask">{{item.comp_type}}</view>
+      </view>
+      <view class="comp_intro fl">
+        <view class="title">{{item.comp_name}}</view>
+        <view class="starbox" >
+          <icon class="on" wx:for="{{item.totalScore}}"></icon>
+          <icon wx:for="{{5-item.totalScore}}"></icon>
+        </view>
+        <view class="address">{{item.address}}</view>
+        <view class="distance">{{item.distance}}</view>
+        <view class="btnBox">
+          <view class="orangeBtn">在线预约</view>
+          <view class="orangeBtn ml20" data-tel="{{item.telephone}}" bindtap="phoneCall"  wx:if="{{item.telephone != ''}}">电话预约</view>
+        </view>
+      </view>
+    </view>
+    <view class="loading" hidden="{{loading}}">
+      <image src="../../images/loading.gif"></image>
+    </view>
+  </scroll-view>
+</view>

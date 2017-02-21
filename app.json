@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/search/search",
+    "pages/repair/repair",
+    "pages/city/city"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "爱车健康",
+    "navigationBarTextStyle":"#fff",
+    "enablePullDownRefresh":true
+  }
+}

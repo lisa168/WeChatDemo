@@ -1,0 +1,170 @@
+/**repair.wxss**/
+.pub_title icon{
+  position:absolute;
+  right:20rpx;
+  top:50%;
+  margin-top:-24rpx;
+  width:46rpx;
+  height:48rpx;
+}
+.skip{
+  position:absolute;
+  right:20rpx;
+  top:50%;
+  margin-top:-24rpx;
+  width:46rpx;
+  height:48rpx;
+}
+.filter{
+  position:relative;
+}
+.filter .btn view{
+  float:left;
+  width:50%;
+  text-align:center;
+  height:80rpx;
+  line-height:80rpx;
+  font-size:28rpx;
+  box-sizing:border-box;
+  border-bottom:1px solid #d1d1d1;
+  color:#333;
+}
+.filter view.btn view:nth-child(1){
+  border-right:1px solid #d1d1d1;
+}
+.filter view.btn view.on{
+  color:#4dab1f;
+}
+.condition{
+  position:absolute;
+  left:0;
+  top:81rpx;
+  width:100%;
+  background:#fff;
+  z-index:2;
+}
+.condition view{
+  padding:0 20rpx;
+  height:74rpx;
+  line-height: 80rpx;
+  font-size:28rpx;
+  color:#333;
+  border-bottom:1px solid #d1d1d1;
+}
+.condition view.on{
+  color:#4dab1f;
+}
+.mod_view{
+  padding:20rpx;
+  border-bottom:1px solid #d1d1d1;
+}
+.imgbox{
+  position: relative;
+}
+.imgbox .mask{
+  position:absolute;
+  bottom:0;
+  left: 0;
+  width:100%;
+  height:38rpx;
+  line-height:38rpx;
+  text-align: center;
+  font-size:20rpx;
+  color:#fff;
+  background: rgba(0, 0, 0, 0.5)
+}
+.imgbox image{
+  width:170rpx;
+  height:190rpx;
+  border-radius:5rpx;
+}
+.comp_intro{
+  position:relative;
+  padding:0 20rpx 50rpx 20rpx;
+  width:500rpx;
+  height:140rpx;
+}
+.title{
+  font-size:28rpx;
+  line-height:30rpx;
+  height:34rpx;
+  color:#333;
+  width:420rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  margin-bottom:4rpx;
+}
+.address{
+  color:#666;
+  font-size:24rpx;
+  line-height:30rpx;
+  height:30rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  margin-bottom:8rpx;
+}
+.starbox{
+  margin-bottom:4rpx;
+}
+.starbox icon{
+  width:26rpx;
+  height:26rpx;
+  background:url(../../images/icon.png) no-repeat -36rpx -28rpx;
+  background-size:62rpx 54rpx;
+}
+.starbox icon.on{
+  background-position: 0 -28rpx;
+}
+.distance{
+  position:absolute;
+  right:0;
+  top:0;
+  color:#ff7631;
+  font-size:26rpx;
+}
+.btnBox{
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+.orangeBtn{
+  display:inline-block;
+  height:50rpx;
+  line-height:50rpx;
+  padding:0 15rpx;
+  text-align:center;
+  background:#ff7631;
+  color:#fff;
+  border-radius:8rpx;
+}
+.greenBtn{
+  display:inline-block;
+  border:1px solid #54bb22;
+  color:#54bb22;
+  font-size:20rpx;
+  height:24rpx;
+  line-height:24rpx;
+  padding:0 10rpx;
+  border-radius:5rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

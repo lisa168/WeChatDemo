@@ -1,0 +1,12 @@
+.inputArea{
+  float:left;
+  width:560rpx;
+  border:1px solid #d1d1d1;
+  border-radius:5rpx;
+  padding:0 10rpx;
+  height:58rpx;
+  line-height:58rpx;
+}
+.searchBtn{
+  float:left;
+}

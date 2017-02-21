@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="loading pt20">
+  <image src="../../images/loading.gif"></image>
+</view>

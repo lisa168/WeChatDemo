@@ -1,0 +1,11 @@
+<!--search.wxml-->
+<view class="container">
+  <view class="pub_title">
+    <icon class="back" bindtap="goBack"></icon>
+    商家搜索
+  </view>
+  <view class="plr20 pt20 clearfix">
+    <input class="inputArea mr20" bindinput="bindKeyInput" type="text" placeholder="商家名称/关键字"/>
+    <button type="primary" size="mini" class="searchBtn" bindtap="searchFn">查询</button>
+  </view>
+</view>
